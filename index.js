@@ -29,7 +29,7 @@ let images = [
     currentImage = (currentImage + 1) % images.length;
     console.log(currentImage);
   }
-  setInterval(changeImage, 10000);
+  setInterval(changeImage, 5000);
    
   const contentList = [
   { title: "1st", description: "IIT KGP KShitij" },
@@ -49,4 +49,4 @@ function changeContent() {
 }
 
 // Change the content every 5 seconds (5000 milliseconds)
-setInterval(changeContent, 10000);
+setInterval(changeContent, 5000);
