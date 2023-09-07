@@ -161,7 +161,8 @@ h4 {
 }
 
 h1 {
-	font-size: 5rem;
+	font-size: 4rem;
+	white-space: nowrap;
 }
 
 h2 {
@@ -659,3 +660,24 @@ nav .link {
 		content: "Electronics Enthusiast";
 	}
 } */
+
+body {
+	font-family: Arial, sans-serif;
+}
+ul.nav {
+	list-style: none;
+	padding: 0;
+}
+ul.nav li {
+	display: inline;
+	margin-right: 20px;
+	cursor: pointer;
+	font-weight: bold;
+	color: var(--primary-alt);
+}
+ul.nav li:hover {
+	text-decoration: underline;
+}
+.content {
+	margin-top: 20px;
+}

@@ -50,3 +50,19 @@ function changeContent() {
 
 // Change the content every 5 seconds (5000 milliseconds)
 setInterval(changeContent, 5000);
+
+
+function showContent(id) {
+  // Hide all content sections
+  var contents = document.querySelectorAll('.content');
+  contents.forEach(function(content) {
+      content.style.display = 'none';
+  });
+
+  // Show the selected content
+  var selectedContent = document.getElementById(id);
+  selectedContent.style.display = 'block';
+}
+
+// Show the default content on page load
+showContent('home');
